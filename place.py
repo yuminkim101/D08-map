@@ -45,6 +45,7 @@ def search_place(query, size=5):
         places.append({
             "이름": doc["place_name"],
             "주소": doc.get("road_address_name") or doc["address_name"],
+            "지번주소": doc["address_name"],
             "위도": 위도,
             "경도": 경도,
         })
